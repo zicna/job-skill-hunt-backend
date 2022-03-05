@@ -31,24 +31,19 @@ Here at the beginning is a list of things I would like to include in this applic
 ___
 ## Daily assignments
 
-1. Day One 
+1. Day One
    - initial commands for backend and frontend
    - setup separate githun repos
    - initial readme.md file
-   - DB schema chart (with all attributes needed for JWT and devise)
-   - add DB schema picture to readme.md
-
+  
    Notes: 
    - instal latest version of Node and npx create-react-app
    - if it's still not working run `npx clear npx cache`
    - 
 
 2. Day Two
-   - generate models
-   - generate routes
-   - generate seed data 
-   - basic model validations
-   - generate controllers
+   - generate user model, routes, controller for login, signin and logout
+   - build simple FE component to test this functionality
 
 
 
