@@ -20,6 +20,14 @@ Here at the beginning is a list of things I would like to include in this applic
 - [ ] custom model level validations
 - [ ] JWT and device for authoritazion and authentication
 
+### DB Commands
+```
+  rails db:drop db:create db:migrate db:seed
+```
+
+
+
+
 ## Frontend
 
 - [ ] predominantly usage of react functional components
@@ -77,6 +85,7 @@ ___
 
 - [<center> Job and Skill Hunt App</center>](#center-job-and-skill-hunt-appcenter)
   - [Backend](#backend)
+    - [DB Commands](#db-commands)
   - [Frontend](#frontend)
   - [Daily assignments](#daily-assignments)
   - [Testing](#testing)
