@@ -1,10 +1,10 @@
 class ApplicationController < ActionController::API
 
-    respont_to :json
+    respond_to :json
     before_action :process_token
 
     private 
-    
+
     def process_token
         if request.headers['Authorization'].present?
           begin
