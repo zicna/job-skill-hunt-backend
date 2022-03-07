@@ -12,9 +12,16 @@ check = " ✅ "
         first_name: Faker::Name.first_name,
         last_name: Faker::Name.last_name,
         email: Faker::Internet.email,
-        password: Faker::Internet.password
+        password: "123456"
     )
     print check
     sleep(0.01)
 end
 puts "10 fake users created"
+
+User.create(
+    first_name: "Milan",
+    last_name: "Zivkovic",
+    email: "ruby_master@example.com",
+    password: "123456"
+    )
