@@ -1,7 +1,8 @@
 class ApplicationController < ActionController::API
-
-    respond_to :json
-    before_action :process_token
+  respond_to :json
+  before_action :process_token
+  # * from devise source code
+  before_action :configure_permitted_parameters, if: :devise_controller?
 
     private 
 
@@ -28,8 +29,10 @@ class ApplicationController < ActionController::API
         @current_user ||= super || User.find(@current_user_id)
     end
 
+    protected
 
-
-
-
+    def configure_permitted_parameters
+        # byebug
+        devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name, :last_name, :email])
+      end
 end
